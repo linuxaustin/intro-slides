@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Austin Linux Meetup – Intro Slides for February 14, 2019</title>
+
+		<meta name="description" content="Slide presentation based on reveal.js">
+		<meta name="author" content="Darren Carpenter">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-transition="zoom">
+					<h3>Austin Linux Meetup -- February 14, 2019</h3>
+						https://linuxaustin.github.io/intro-slides/2019-02-14
+					<img width="524" height="344" data-src="https://images.unsplash.com/photo-1532641415120-6ae8c0e29507?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&fit=max&ixid=eyJhcHBfaWQiOjIwNzA2fQ&s=96805ed6a96a103cea983c5567d84d78" alt="Penguin">
+					<p>
+						Welcome!
+					</p>
+				</section>
+
+				<section data-transition="fade-in">
+					<section>
+						<h2>Introductions</h2>
+						<p class="fragment"><b>Your Organizers:</b><br>Darren Carpenter<br>Sameer Khan</p>
+						<p class="fragment"><b>Organization help:</b><br>Daria Ilic<br>Chad Crowell</p>
+						<p class="fragment"><b>Maybe you??? </b>Talk to us about how you can help.</p>
+						<aside class="notes">
+							Go down from here!!!
+						</aside>
+					</section>
+					<section>
+						<h2>Connect</h2>
+						<p class="fragment">Who is looking for work?</p><br>
+						<p class="fragment">Who is looking to hire?</p><br>
+						<p class="fragment">Who has an announcement to make?</p><br>
+					</section>
+				</section>
+
+				<section data-transition="convex-in concave-out">
+					<section>
+						<h2>Community</h2>
+						<p><a href="https://austin.chicktech.org">Austin Chick Tech</a></p>
+						<p>https://austin.chicktech.org</p>
+					</section>
+					<section data-transition="convex-in concave-out" data-background-iframe="https://austin.chicktech.org">
+					</section>
+				</section>
+
+				<section data-transition="convex-in concave-out">
+					<section>
+						<h2>TX Linux Fest 2019</h2>
+						Call For Papers open until<br>
+						Feb 28th, 2019 at 11:59pm CST<br>
+						<p>Visit: <a href="https://2019.texaslinuxfest.org/">https://2019.texaslinuxfest.org/</a><br>
+						for more information and to submit a talk</p>
+					</section>
+					<section data-transition="convex-in concave-out" data-background-iframe="https://2019.texaslinuxfest.org/">
+					</section>
+				</section>
+
+				<section data-transition="convex-in fade-out">
+					<h2>Thanks to our sponsors</h2>
+					<a href="https://www.oreilly.com/pub/cpc/169501"><img src="https://www.oreilly.com/partner_file/ORM_logo_box75_hex.jpg" alt="O'Reilly"/></a><br>
+					<aside class="notes">
+						Sameer may have more detailed information on O'Reilly sponsorship here.
+					</aside>
+				</section>
+
+				<section data-transition="fade">
+					<h2>Our Presentation</h2>
+					<p>Meltdown and Spectre<br><br>
+					Kernel and CPU guru, Kim Phillips will show exactly how and why most modern CPUs have gaping security holes that defy any true fixes!
+				</section>
+
+				<section data-transition="fade">
+					<h2>Coming up</h2>
+					Paul Dejean<br>
+					Continuous integration of docker images in gitlab<br><br>
+					Would you like to present? Let us know.
+				</section>
+
+				<section data-transition="fade">
+					<h2>Thanks for Coming</h2>
+					<p>We hope to see you again next time!</p><br>
+					<p>Find us on twitter <a href="https://twitter.com/LinuxAustin">@LinuxAustin</a></p><br><br>
+					<p>
+						- <a href="https://github.com/hakimel/reveal.js">Slides enabled by reveal.js</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
