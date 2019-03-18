@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Austin Linux Meetup – Info Slides for March 14, 2019</title>
+
+		<meta name="description" content="Slide presentation based on reveal.js">
+		<meta name="author" content="Darren Carpenter">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-transition="zoom">
+					<h3>Austin Linux Meetup -- March 14, 2019</h3>
+						https://linuxaustin.github.io/intro-slides/2019-03-14
+					<img width="524" height="344" data-src="https://images.unsplash.com/photo-1532641415120-6ae8c0e29507?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&fit=max&ixid=eyJhcHBfaWQiOjIwNzA2fQ&s=96805ed6a96a103cea983c5567d84d78" alt="Penguin">
+					<p>
+						Here are the slides that did not make it to the meetup.
+					</p>
+				</section>
+
+				<section data-transition="fade-in">
+					<section>
+						<h2>Introductions</h2>
+						<p class="fragment"><b>Your Organizers:</b><br>Darren Carpenter<br>Sameer Khan</p>
+						<p class="fragment"><b>Maybe you??? </b>Talk to us about how you can help.</p>
+					</section>
+				</section>
+
+				<section data-transition="convex-in concave-out">
+					<section>
+						<h2>Community</h2>
+						<p><a href="https://austin.chicktech.org">Austin Chick Tech</a></p>
+						<p>https://austin.chicktech.org</p>
+					</section>
+					<section data-transition="convex-in concave-out" data-background-iframe="https://austin.chicktech.org">
+					</section>
+					<section>
+						<h2>Opportunities</h2>
+						<p><a href="https://austin.chicktech.org">Austin Chick Tech</a></p>
+						<p>Register for Brains & Brews annual fundraiser for ChickTech Austin on Monday April 1.
+						Enter MEETUP to get 15% off your ticket. <a href="https://impactflow.com/event/brains-brews-for-chicktech-austin-10059">Get info and register here!</a>
+						Please share with others.
+					</section>
+				</section>
+
+				<section data-transition="convex-in fade-out">
+					<h2>Thanks to our sponsors</h2>
+					<a href="https://www.oreilly.com/pub/cpc/169501"><img src="https://www.oreilly.com/partner_file/ORM_logo_box75_hex.jpg" alt="O'Reilly"/></a><br>
+				</section>
+
+				<section data-transition="fade">
+					<h2>Our Presentation</h2>
+					<p>Set up your own CI/CD docker pipeline in AWS using gitlab<br><br>
+					CI is great. Docker is great. Building Docker images with CI? Also great...and a bit more complicated. In this month's meeting (jointly hosted with the Austin PHP Meetup), Paul Dejean tackled building Docker images via GitLab's Continuous Integration functionality from scratch deploying into an AWS environment.
+				</section>
+
+				<section data-transition="fade">
+					<h2>Thanks for Coming</h2>
+					<p>We hope to see you again next time!</p><br>
+					<p>Find us on twitter <a href="https://twitter.com/LinuxAustin">@LinuxAustin</a></p><br><br>
+					<p>
+						- <a href="https://github.com/hakimel/reveal.js">Slides enabled by reveal.js</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
